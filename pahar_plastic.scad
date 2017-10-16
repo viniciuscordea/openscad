@@ -8,4 +8,9 @@ module pahar_plastic(inaltime_pahar,raza_baza_pahar,raza_sus_pahar,raza_buza,ina
         translate([0,0,grosime_perete])cylinder(h=inaltime_pahar+inaltime_buza, r1=raza_baza_pahar-grosime_perete,r2=raza_sus_pahar-grosime_perete);
         }
 }
-pahar_plastic(60,15,30,32,2,1);
+pahar_plastic(inaltime_pahar=60,
+              raza_baza_pahar=15,
+              raza_sus_pahar=30,
+              raza_buza=32,
+              inaltime_buza=2,
+              grosime_perete=1);
